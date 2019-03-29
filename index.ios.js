@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, AppRegistry, StyleSheet, View } from 'react-native';
 import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 const styles = StyleSheet.create({
   viewStyle: {
@@ -8,7 +9,6 @@ const styles = StyleSheet.create({
     height: '100%'
   },
   titleText: {
-    color: 'black',
     marginTop: '10%',
   },
 });
@@ -19,7 +19,8 @@ const App = () => {
   return (
     <View style={viewStyle}>
       <Text style={titleText}>Some Text</Text>
-      <Header />
+      <Header headerText={'Albums'} />
+      <AlbumList />
     </View>
   );
 };
