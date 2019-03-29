@@ -1,18 +1,28 @@
 import React from 'react';
-import { Text, AppRegistry, StyleSheet } from 'react-native';
-// import Header from './src/components/Header';
+import { Text, AppRegistry, StyleSheet, View } from 'react-native';
+import Header from './src/components/Header';
 
 const styles = StyleSheet.create({
+  viewStyle: {
+    backgroundColor: 'white',
+    height: '100%'
+  },
   titleText: {
-    color: 'white',
+    color: 'black',
+    marginTop: '10%',
   },
 });
 
 // Create a component
 const App = () => {
+  const { viewStyle, titleText } = styles;
   return (
-    <Text style={styles.titleText}>Some Text</Text>
+    <View style={viewStyle}>
+      <Text style={titleText}>Some Text</Text>
+      <Header />
+    </View>
   );
 };
+
 // Render it to the device
 AppRegistry.registerComponent('albums', () => App);
