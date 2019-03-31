@@ -6,7 +6,8 @@ import AlbumList from './src/components/AlbumList';
 const styles = StyleSheet.create({
   viewStyle: {
     backgroundColor: 'white',
-    height: '100%'
+    height: '100%',
+    flex: 1,
   },
   titleText: {
     marginTop: '10%',
